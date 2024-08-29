@@ -10,7 +10,12 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.header__container >img:hover{
+  transform: rotateX(180deg);
+}
+img{
+  transition: all 1s;
+}
 .nav-list {
   display: flex;
   list-style: none;

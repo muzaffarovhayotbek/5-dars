@@ -16,6 +16,12 @@
   list-style: none;
   gap: 42px;
 }
+.header__container .header-img:hover{
+  transform: rotateX(180deg);
+}
+.header-img{
+  transition: all 1s;
+}
 
 .header__container .nav-list .nav-item {
   font-size: 14px;
@@ -85,6 +91,14 @@ main {
   color: red;
   cursor: pointer;
 }
+
+.main-right img:hover{
+  transform: rotateX(180deg);
+}
+img{
+  transition: all 1s;
+  cursor: pointer;
+}
 /* main end */
 
 /* footer */
@@ -142,8 +156,11 @@ main {
   height: 24px;
 }
 
-.footer-social img:hover {
-  transform: rotate(20deg);
+.footer-social img:hover{
+  transform: rotateX(180deg);
+}
+img{
+  transition: all 1s;
 }
 /* footer end */
 
