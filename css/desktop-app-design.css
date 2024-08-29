@@ -1,0 +1,174 @@
+@import url("../global.css");
+
+.header {
+  margin-top: 64px;
+  margin-bottom: 67px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 42px;
+}
+
+.header__container .nav-list .nav-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  transition: all 1s;
+}
+
+.header__container .nav-list .nav-item a {
+  text-decoration: none;
+  color: rgba(51, 49, 54, 1);
+}
+
+/* main */
+.main {
+  margin-top: 64px;
+  margin-bottom: 160px;
+}
+
+.main__container {
+  width: 100%; /* Kichik ekranlar uchun width 100% ga o'zgartirildi */
+  max-width: 1440px; /* Maksimal kenglik belgilandi */
+  height: auto; /* Balandlik auto qilindi */
+  background-color: rgba(231, 129, 107, 1);
+  border-radius: 10px;
+}
+
+.main__container > h2 {
+  padding-top: 64px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.main__container > p {
+  padding-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444444;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 30px;
+  font-size: 16px;
+  transition: all 0.9s;
+}
+
+.footer-links a:hover {
+  color: rgba(231, 129, 107, 1);
+  cursor: pointer;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.footer-info,
+.footer-contact {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-social a {
+  margin-right: 15px;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social img:hover {
+  transform: rotate(20deg);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: column; /* Kichik ekranlar uchun vertikal joylashuv */
+    align-items: center; /* Elementlarni markazlashtirish */
+  }
+
+  .nav-list {
+    flex-direction: column; /* Kichik ekranlar uchun vertikal joylashuv */
+    gap: 20px; /* Elementlar orasidagi bo'shliq */
+    align-items: center; /* Elementlarni markazlashtirish */
+  }
+
+  .main__container {
+    padding: 20px; /* Ichki bo'shliq qo'shildi */
+  }
+
+  .main__container > h2 {
+    font-size: 32px; /* Kichik ekranlar uchun font o'lchami */
+    line-height: 40px;
+  }
+
+  .main__container > p {
+    padding-top: 10px;
+  }
+
+  .footer-container {
+    flex-direction: column; /* Kichik ekranlar uchun vertikal joylashuv */
+    align-items: center; /* Elementlarni markazlashtirish */
+    padding-bottom: 20px; /* Ichki bo'shliq */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Kichik ekranlar uchun vertikal joylashuv */
+    align-items: center; /* Elementlarni markazlashtirish */
+  }
+
+  .footer-info,
+  .footer-contact {
+    text-align: center; /* Kichik ekranlar uchun matnni markazlashtirish */
+    margin-bottom: 20px; /* Ichki bo'shliq */
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column; /* Kichik ekranlar uchun vertikal joylashuv */
+    align-items: center; /* Elementlarni markazlashtirish */
+  }
+
+  .footer-links a {
+    margin-right: 0; /* Kichik ekranlar uchun bo'shliq olib tashlandi */
+    margin-bottom: 10px; /* Ichki bo'shliq qo'shildi */
+  }
+}
