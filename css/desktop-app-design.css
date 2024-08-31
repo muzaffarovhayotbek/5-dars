@@ -74,6 +74,7 @@ img {
 .article__container {
   gap: 31px;
   display: flex;
+  justify-content: center;
 }
 
 .article__container .article-first {
